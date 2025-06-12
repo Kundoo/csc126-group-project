@@ -18,13 +18,13 @@ int main() {
     /* Initialization */
 
     // Booking information
-    char bookingID[2];
+    string bookingID;
 
     // Driver information
     char driverName[50];                                // Driver name & nationality
     int driverAge = 0;                                  // Driver age
     char driverLicense = 'N';                           // Driver license
-
+    int driverCount;                                    // Driver count 
 
     // Greeting message
     cout << "  ____             _  __          _     ____              _    _               ____            _                 " << endl;
@@ -50,11 +50,24 @@ int main() {
     cout << "| |    |_|   /_/    |_| \\_|  | |                                                                     " << endl;
     cout << " \\_\\                        /_/   															       " << endl;
 
+    cout<<"Enter your name :";
+    cin>>driverName;
+    cout<<"Enter your age :";
+    cin>>driverAge;
+    cout<<"Enter your booking type (Solo/Group): ";
+    cin >> bookingID;// Input booking ID
 
-    cin >> bookingID; // Input booking ID
+    while (bookingID == "Solo")
+    {
+    driverCount = 1;
+    if (driverLicense = 'Y')
+
+    }
+    
+
     cin.ignore(); // Clear the newline character from the input buffer
 
-
+;
     cout << endl;
     system("pause");
     return 0;
